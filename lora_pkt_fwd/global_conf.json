@@ -6,82 +6,82 @@
         "radio_0": {
             "enable": true,
             "type": "SX1257",
-            "freq": 867500000,
+            "freq": 902700000,
             "rssi_offset": -164.0,
             "tx_enable": true,
-            "tx_freq_min": 863000000,
-            "tx_freq_max": 870000000
+            "tx_freq_min": 902000000,
+            "tx_freq_max": 928000000
         },
         "radio_1": {
             "enable": true,
             "type": "SX1257",
-            "freq": 868500000,
+            "freq": 903400000,
             "rssi_offset": -164.0,
             "tx_enable": false
         },
         "chan_multiSF_0": {
-            /* Lora MAC channel, 125kHz, all SF, 868.1 MHz */
+            /* Lora MAC channel, 125kHz, all SF, 902.3 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": -400000
         },
         "chan_multiSF_1": {
-            /* Lora MAC channel, 125kHz, all SF, 868.3 MHz */
+            /* Lora MAC channel, 125kHz, all SF, 902.5 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": -200000
         },
         "chan_multiSF_2": {
-            /* Lora MAC channel, 125kHz, all SF, 868.5 MHz */
+            /* Lora MAC channel, 125kHz, all SF, 902.7 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": 0
         },
         "chan_multiSF_3": {
-            /* Lora MAC channel, 125kHz, all SF, 867.1 MHz */
-            "enable": true,
-            "radio": 0,
-            "if": -400000
-        },
-        "chan_multiSF_4": {
-            /* Lora MAC channel, 125kHz, all SF, 867.3 MHz */
-            "enable": true,
-            "radio": 0,
-            "if": -200000
-        },
-        "chan_multiSF_5": {
-            /* Lora MAC channel, 125kHz, all SF, 867.5 MHz */
-            "enable": true,
-            "radio": 0,
-            "if": 0
-        },
-        "chan_multiSF_6": {
-            /* Lora MAC channel, 125kHz, all SF, 867.7 MHz */
+            /* Lora MAC channel, 125kHz, all SF, 902.9 MHz */
             "enable": true,
             "radio": 0,
             "if": 200000
         },
-        "chan_multiSF_7": {
-            /* Lora MAC channel, 125kHz, all SF, 867.9 MHz */
+        "chan_multiSF_4": {
+            /* Lora MAC channel, 125kHz, all SF, 903.1 MHz */
             "enable": true,
-            "radio": 0,
-            "if": 400000
+            "radio": 1,
+            "if": -300000
+        },
+        "chan_multiSF_5": {
+            /* Lora MAC channel, 125kHz, all SF, 903.3 MHz */
+            "enable": true,
+            "radio": 1,
+            "if": -100000
+        },
+        "chan_multiSF_6": {
+            /* Lora MAC channel, 125kHz, all SF, 903.5 MHz */
+            "enable": true,
+            "radio": 1,
+            "if": 100000
+        },
+        "chan_multiSF_7": {
+            /* Lora MAC channel, 125kHz, all SF, 903.7 MHz */
+            "enable": true,
+            "radio": 1,
+            "if": 300000
         },
         "chan_Lora_std": {
-            /* Lora MAC channel, 250kHz, SF7, 868.3 MHz */
+            /* Lora MAC channel, 500kHz, SF8, 903.0 MHz */
             "enable": true,
-            "radio": 1,
-            "if": -200000,
-            "bandwidth": 250000,
-            "spread_factor": 7
+            "radio": 0,
+            "if": 300000,
+            "bandwidth": 500000,
+            "spread_factor": 8
         },
         "chan_FSK": {
-            /* FSK 50kbps channel, 868.8 MHz */
-            "enable": true,
-            "radio": 1,
+            /* FSK 100kbps channel, 903.0 MHz */
+            "enable": false,
+            "radio": 0,
             "if": 300000,
-            "bandwidth": 125000,
-            "datarate": 50000
+            "bandwidth": 250000,
+            "datarate": 100000
         },
 		"tx_lut_0": {
 			/* TX gain table, index 0 */
@@ -128,81 +128,101 @@
 		"tx_lut_6": {
 			/* TX gain table, index 6 */
 			"pa_gain": 0,
-			"mix_gain": 5,
-			"rf_power": 9,
+			"mix_gain": 6,
+			"rf_power": 11,
 			"dig_gain": 3
 		},
 		"tx_lut_7": {
 			/* TX gain table, index 7 */
 			"pa_gain": 0,
-			"mix_gain": 6,
-			"rf_power": 11,
-			"dig_gain": 3
-		},
-		"tx_lut_8": {
-			/* TX gain table, index 8 */
-			"pa_gain": 0,
 			"mix_gain": 5,
 			"rf_power": 13,
 			"dig_gain": 2
 		},
-		"tx_lut_9": {
-			/* TX gain table, index 9 */
+		"tx_lut_8": {
+			/* TX gain table, index 8 */
 			"pa_gain": 0,
 			"mix_gain": 8,
 			"rf_power": 14,
 			"dig_gain": 3
 		},
-		"tx_lut_10": {
-			/* TX gain table, index 10 */
+		"tx_lut_9": {
+			/* TX gain table, index 9 */
 			"pa_gain": 0,
-			"mix_gain": 6,
+			"mix_gain": 10,
 			"rf_power": 15,
 			"dig_gain": 2
 		},
-		"tx_lut_11": {
-			/* TX gain table, index 11 */
+		"tx_lut_10": {
+			/* TX gain table, index 10 */
 			"pa_gain": 0,
 			"mix_gain": 6,
 			"rf_power": 16,
 			"dig_gain": 1
 		},
-		"tx_lut_12": {
-			/* TX gain table, index 12 */
+		"tx_lut_11": {
+			/* TX gain table, index 11 */
 			"pa_gain": 0,
 			"mix_gain": 9,
 			"rf_power": 17,
 			"dig_gain": 3
 		},
-		"tx_lut_13": {
-			/* TX gain table, index 13 */
+		"tx_lut_12": {
+			/* TX gain table, index 12 */
 			"pa_gain": 0,
 			"mix_gain": 10,
 			"rf_power": 18,
 			"dig_gain": 3
 		},
-		"tx_lut_14": {
-			/* TX gain table, index 14 */
+		"tx_lut_13": {
+			/* TX gain table, index 13 */
 			"pa_gain": 0,
 			"mix_gain": 11,
 			"rf_power": 19,
 			"dig_gain": 3
 		},
-		"tx_lut_15": {
-			/* TX gain table, index 15 */
+		"tx_lut_14": {
+			/* TX gain table, index 14 */
 			"pa_gain": 0,
 			"mix_gain": 12,
 			"rf_power": 20,
 			"dig_gain": 3
+		},
+		"tx_lut_15": {
+			/* TX gain table, index 15 */
+			"pa_gain": 0,
+			"mix_gain": 13,
+			"rf_power": 21,
+			"dig_gain": 2
 		}		
     },
 
     "gateway_conf": {
         "gateway_ID": "AA555A0000240409",
-        /* change with default server address/ports, or overwrite in local_conf.json */
+        /* change with default server address/ports, or overwrite in local_conf.json
+	from ->https://www.thethingsnetwork.org/docs/gateways/packet-forwarder/semtech-udp.html
+	these are the legacy packet forwarders - need to configured your server to use them on port 1700
+	it's a udp stream - easy to see with `tcpdump -vvi XXX -p udp`
+	
+	router.eu.thethings.network	EU 433 and EU 863-870
+	router.us.thethings.network	US 902-928
+	router.cn.thethings.network	China 470-510 and 779-787
+	router.as.thethings.network	Southeast Asia 923 MHz
+	router.as1.thethings.network	Southeast Asia 920-923 MHz
+	router.as2.thethings.network	Southeast Asia 923-925 MHz
+	router.kr.thethings.network	Korea 920-923 MHz
+	router.jp.thethings.network	Japan 923-925 MHz (with EIRP cap according to Japanese regulations)
+	au915.thethings.meshed.com.au	Australia 915-928 MHz
+	as923.thethings.meshed.com.au	Australia (Southeast Asia 923MHz frequency plan)
+	ttn.opennetworkinfrastructure.org	Switzerland (EU 433 and EU 863-870)
+	
+	And the troubleshooting page (belows is $$$)
+	from -> https://www.thethingsnetwork.org/docs/gateways/troubleshooting/semtech-udp.html
+	
+	*/
         "server_address": "localhost",
-        "serv_port_up": 1680,
-        "serv_port_down": 1680,
+        "serv_port_up": 1700,
+        "serv_port_down": 1700,
         /* adjust the following parameters for your network */
         "keepalive_interval": 10,
         "stat_interval": 30,
@@ -213,4 +233,3 @@
         "forward_crc_disabled": false
     }
 }
-
