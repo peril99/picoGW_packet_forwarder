@@ -1,5 +1,5 @@
 
-[snip] notes for this  repo
+[snip] notes for this repo <br>
 Note: OMG This library has led to countless hours of frustrastion on my part, and this and the hal fork represents a set of changes that I was debugging /wrt to implementation on a pcengines (https://www.pcengines.ch/) apu2 / apu3 setup. These were mostly configuration changes that I was making to local header files, and wanted to keep a copy of the fork based library incase profiling or debugging symbols needed to be added. As it turns out - the problem appears to be more a factor of a collided interupt on the apu2 / apu3 platform, which was knocking the embedded intel nic's offline as the semtech card was initialized. After I fried the module in a 140 degree texas attic, my will to continute with the debugging became less interesting.
 
 Thru my travels...was modelling this -> https://thomasflummer.com/projects/lora-gateway/
