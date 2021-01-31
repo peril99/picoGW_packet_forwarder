@@ -1,4 +1,25 @@
-	 / _____)             _              | |    
+
+[snip] notes for this  repo
+Note: OMG This library has led to countless hours of frustrastion on my part, and this and the hal fork represents a set of changes that I was debugging /wrt to implementation on a pcengines (https://www.pcengines.ch/) apu2 / apu3 setup. These were mostly configuration changes that I was making to local header files, and wanted to keep a copy of the fork based library incase profiling or debugging symbols needed to be added. As it turns out - the problem appears to be more a factor of a collided interupt on the apu2 / apu3 platform, which was knocking the embedded intel nic's offline as the semtech card was initialized. After I fried the module in a 140 degree texas attic, my will to continute with the debugging became less interesting.
+
+Thru my travels...was modelling this -> https://thomasflummer.com/projects/lora-gateway/
+
+Had an APU2 / APU3 (once I thought the problem might be apu2 build specific), but turns out it's a problem across both apu2/apu3 hardware platform
+HW setup
+-pcengines apu2 / apu3 
+-https://www.n-fuse.co/devices/LoRaWAN-Concentrator-Card-mini-PCIe.html
+
+IMO --  recommend folks not consider the APU + n-fuse mcpie platform, not so much because of issues like this, but more because there are easier / less expensive / smaller foot setups to build / test gateways with that require less effort.
+
+A RPI + https://store.rakwireless.com/collections/wishat/products/rak2287-pi-hat + https://www.rakwireless.com/en-us/products/lpwan-gateways-and-concentrators/rak2287
+
+links
+https://github.com/Lora-net/picoGW_packet_forwarder/issues?q=is%3Aissue+is%3Aclosed
+
+
+
+
+	/ _____)             _              | |    
 	( (____  _____ ____ _| |_ _____  ____| |__  
 	 \____ \| ___ |    (_   _) ___ |/ ___)  _ \ 
 	 _____) ) ____| | | || |_| ____( (___| | | |
@@ -107,7 +128,7 @@ maximum ratings or operation outside the specified range.
 SEMTECH PRODUCTS ARE NOT DESIGNED, INTENDED, AUTHORIZED OR WARRANTED TO BE 
 SUITABLE FOR USE IN LIFE-SUPPORT APPLICATIONS, DEVICES OR SYSTEMS OR OTHER 
 CRITICAL APPLICATIONS. INCLUSION OF SEMTECH PRODUCTS IN SUCH APPLICATIONS IS 
-UNDERSTOOD TO BE UNDERTAKEN SOLELY AT THE CUSTOMER’S OWN RISK. Should a 
+UNDERSTOOD TO BE UNDERTAKEN SOLELY AT THE CUSTOMERâ€™S OWN RISK. Should a 
 customer purchase or use Semtech products for any such unauthorized 
 application, the customer shall indemnify and hold Semtech and its officers, 
 employees, subsidiaries, affiliates, and distributors harmless against all 
