@@ -13,10 +13,12 @@ IMO --  recommend folks not consider the APU + n-fuse mcpie platform, not so muc
 
 A RPI + https://store.rakwireless.com/collections/wishat/products/rak2287-pi-hat + https://www.rakwireless.com/en-us/products/lpwan-gateways-and-concentrators/rak2287
 
-links
+links<br>
 https://github.com/Lora-net/picoGW_packet_forwarder/issues?q=is%3Aissue+is%3Aclosed
 
-
+Adrian Terranova
+Jan 31 2021
+@gmail.com (it's not hard to find me.)
 
 
 	/ _____)             _              | |    
